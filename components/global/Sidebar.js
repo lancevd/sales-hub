@@ -1,10 +1,12 @@
+import Link from "next/link";
+
 // components/Dashboard/Sidebar.jsx
 export default function Sidebar() {
   const menuItems = [
     { label: "Home", href: "/" },
     { label: "Recent", href: "#" },
     { label: "Pinned", href: "#" },
-    { label: "Leads", href: "#" },
+    { label: "Leads", href: "leads" },
     { label: "Opportunities", href: "#" },
   ];
 
@@ -13,9 +15,9 @@ export default function Sidebar() {
       <ul>
         {menuItems.map((item) => (
           <li key={item.label} className="my-2">
-            <a href={item.href} className="text-gray-700 hover:text-blue-600">
+            <Link href={item.href} className="text-gray-700 hover:text-blue-600">
               {item.label}
-            </a>
+            </Link>
           </li>
         ))}
       </ul>

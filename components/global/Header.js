@@ -1,11 +1,12 @@
-// components/Dashboard/Header.jsx
+import { CgMenuGridO } from "react-icons/cg";
+
 export default function Header() {
   return (
-    <header className="p-4 bg-white shadow-md">
-      <h1 className="text-lg font-semibold">
-        Hi Mona, <span className="text-blue-600">68% of goal achieved</span> and
-        the rest can be achieved by focusing on 20 top leads.
-      </h1>
+    <header className="p-4 bg-[#00102B] text-[#9CA9B8] flex justify-between shadow-md">
+      <div className="">
+        <CgMenuGridO className="text-2xl" />
+        <p>Dynamic 365 | Sales Hub</p>
+      </div>
     </header>
   );
 }
